@@ -1,0 +1,42 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.spec
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# ===== 打包 / 编译产物 =====
+# release/ 里是 PyInstaller / Nuitka 的单文件 exe，体积大且可复现，不进版本库
+release/
+*.manifest
+*.pyd
+*.dll
+
+# ===== 运行时数据（不要提交）=====
+# 组卷网登录态（Cookie），含个人账号信息
+.chrome_profile/
+.chrome_profile_tmp/
+# pywebview 的界面偏好（主题选择）
+.webview/
+# 导出的 PDF 与运行日志
+*.pdf
+crash.log
+stderr.log
+*.log
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
